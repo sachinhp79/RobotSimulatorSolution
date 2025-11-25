@@ -14,8 +14,10 @@ namespace RobotSimulatorTest.Client
             {
                 // Switch between these to test different scenarios:
                 //await ExecuteInstructionsFromFile(simulationController, "TestDataFiles\\InputCommands.txt");
-                await ExecuteInstructionsFromFile(simulationController, "TestDataFiles\\InvalidCommands.txt");
+                //await ExecuteInstructionsFromFile(simulationController, "TestDataFiles\\InvalidCommands.txt");
                 // await ExecuteInstructionsFromFile(simulationController, "TestDataFiles\\EdgeCases.txt");
+                await ExecuteInstructionsFromFile(simulationController, "TestDataFiles\\MixCommands.txt");
+
             }
             catch (DataParsingException ex)
             {
