@@ -49,7 +49,6 @@ namespace MissingNumberSolution.Client
         private static IServiceCollection AddInfrastructureServices(this IServiceCollection services)
         {
             // Parsers
-            services.AddScoped<IDataParser<string>, InputDataParser<string>>();
             services.AddScoped<IInstructionParser, InstructionParser>();
 
             // Factories
