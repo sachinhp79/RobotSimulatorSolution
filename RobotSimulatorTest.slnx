@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="RobotSimulatorTest.Application/RobotSimulatorTest.Application.csproj" />
+  <Project Path="RobotSimulatorTest.Domain/RobotSimulatorTest.Domain.csproj" />
+  <Project Path="RobotSimulatorTest.Infrastructure/RobotSimulatorTest.Infrastructure.csproj" />
+  <Project Path="RobotSimulatorTest/RobotSimulatorTest.Client.csproj" />
+</Solution>
