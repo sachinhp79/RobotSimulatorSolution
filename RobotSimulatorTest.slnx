@@ -1,9 +1,4 @@
 <Solution>
-  <Folder Name="/Solution Items/">
-    <File Path="EdgeCases.txt" />
-    <File Path="InvalidCommands.txt" />
-    <File Path="TestDataFiles/InputCommand.txt" />
-  </Folder>
   <Project Path="RobotSimulatorTest.Application/RobotSimulatorTest.Application.csproj" />
   <Project Path="RobotSimulatorTest.Client/RobotSimulatorTest.Client.csproj" />
   <Project Path="RobotSimulatorTest.Domain/RobotSimulatorTest.Domain.csproj" />
