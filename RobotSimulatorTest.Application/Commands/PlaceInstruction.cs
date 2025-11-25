@@ -9,8 +9,9 @@ public class PlaceInstruction(int x, int y, Direction direction) : IInstruction
     public int Y { get; } = y;
     public Direction Direction { get; } = direction;
 
-    public async Task ExecuteInstructionsAsync(ISimulationService simulationService)
+    public Task ExecuteInstructionsAsync(ISimulationService simulationService)
     {
-        throw new NotImplementedException();
+        simulationService.PlaceRobot(X, Y, Direction);
+        return Task.CompletedTask;
     }
 }

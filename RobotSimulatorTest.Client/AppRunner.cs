@@ -10,8 +10,12 @@ namespace RobotSimulatorTest.Client
         public async Task Run()
         {
             try
+            
             {
-                await ExecuteInstuctionsFromFile(simulationController, "InputCommands.txt");
+                // Switch between these to test different scenarios:
+                //await ExecuteInstructionsFromFile(simulationController, "TestDataFiles\\InputCommands.txt");
+                await ExecuteInstructionsFromFile(simulationController, "TestDataFiles\\InvalidCommands.txt");
+                // await ExecuteInstructionsFromFile(simulationController, "TestDataFiles\\EdgeCases.txt");
             }
             catch (DataParsingException ex)
             {
@@ -20,11 +24,11 @@ namespace RobotSimulatorTest.Client
             }
             catch (Exception ex)
             {
-                await logger.LogInformation($"An error occurred: {ex.Message}", null);
+                await logger.LogInformation($"An error occurred: {ex.Message}", LogLevel.ERROR);
             }
         }
 
-        private async Task ExecuteInstuctionsFromFile(SimulationController controller, string filePath)
+        private async Task ExecuteInstructionsFromFile(SimulationController controller, string filePath)
         {
             Console.WriteLine($"Executing Instructions from file: {filePath}\n");
 

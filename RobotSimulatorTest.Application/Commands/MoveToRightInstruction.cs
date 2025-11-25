@@ -4,9 +4,10 @@ namespace RobotSimulatorTest.Application.Commands
 {
     public class MoveToRightInstruction : IInstruction
     {
-        public async Task ExecuteInstructionsAsync(ISimulationService simulatioService)
+        public Task ExecuteInstructionsAsync(ISimulationService simulationService)
         {
-            throw new NotImplementedException();
+            simulationService.MoveRobotToRight();
+            return Task.CompletedTask;
         }
     }
 }
